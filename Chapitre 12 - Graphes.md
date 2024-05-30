@@ -30,7 +30,6 @@ Un graphe non orienté $G$ est un couple $(S,A)$ avec $S$ un ensemble non vide d
 
 <u>Exemple de graphe non orienté :</u>
 
-![[Excalidraw/Image/Pasted image 20240404081646.png]]
 
 $S = \{ 0,1,2,3,4,5,6\}$ et $A = \{ \{0,6\} , \{1,3\} , \{1,2\} , \{1,4\} , \{3,4\} , \{2,4\} , \{5,4\} \}$
 

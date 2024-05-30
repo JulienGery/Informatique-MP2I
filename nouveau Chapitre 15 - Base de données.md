@@ -1,5 +1,5 @@
 
-<u>Objectif :</u> 
+<u>Objectif :</u>
 
 Centraliser toutes les données à un unique endroit, la base de données, qui possède son propre système de gestion, un SGBD, avec un unique langage pour interagir avec les données, le SQL.
 
@@ -23,14 +23,14 @@ Le SGBD (système de gestion de bases de données) est un logiciel permettant de
 
 - Gérer les accès concurrents.
 
-- Réceptionner et traiter les requêtes en respectant les principes ACID 
-	
+- Réceptionner et traiter les requêtes en respectant les principes ACID
+
 	- Atomicité : “Toute la requête ou rien”.
-	
+
 	- Cohérence : “Respect des contraintes”.
-	
+
 	- Isolation : “Traitement d’une requête comme si c’était la seule”.
-	
+
 	- Durabilité : “Les requêtes sont permanentes“.
 
 <u>Définition :</u>
@@ -43,7 +43,7 @@ Le paradigme logique est un paradigme de programmation qui définit un programme
 
 <u>Définition :</u>
 
-Une entité est un objet (au sens large) du monde réel. Les informations liées à cet objet sont appelées ses propriétés. 
+Une entité est un objet (au sens large) du monde réel. Les informations liées à cet objet sont appelées ses propriétés.
 
 Une entité doit toujours pouvoir être identifiée de manière unique. Parmi ses propriétés, une ou plusieurs la distingue des autres entités.
 
@@ -59,7 +59,7 @@ Une association représente un lien entre plusieurs entités. Les associations p
 
 Un type d’association regroupe les associations qui ont des propriétés de type similaires, et qui font le lien entre des entités appartenant au même type d’entité.
 
-<u>Exemple :</u> 
+<u>Exemple :</u>
 
 ![[Excalidraw/Drawing 2024-05-29 10.51.04.excalidraw]]
 
@@ -97,7 +97,7 @@ Si on a dans le modèle entité-association des associations de cardinalités $*
 
 ### 3. Modèle relationnel
 
-= Organisation concrète des données dans la base 
+= Organisation concrète des données dans la base
 
 = interface avec l’utilisateur
 
@@ -117,7 +117,7 @@ Le domaine d’un attribut est l’ensemble des valeurs que peut prendre cet att
 
 <u>Schéma relationnel :</u>
 
-Relation $R$ à $n$ attributs $A_{1},…,A_{n}$ de domaines respectifs $D_{1},…,D_{n}$ 
+Relation $R$ à $n$ attributs $A_{1},…,A_{n}$ de domaines respectifs $D_{1},…,D_{n}$
 
 $R(A_{1}:D_{1},…,A_{n}:D_{n})$
 
@@ -173,13 +173,13 @@ Passage du modèle entité-association au modèle relationnel.
 
 <u>Schéma relationnel complet :</u>
 
-Auteurs($\underline{id}$ : INT, prénom : TEXT, nom : TEXT, naissance : TEXT, mort : TEXT, ville_naissance $\rightarrow$ Villes.id INTEGRER) 
+Auteurs($\underline{id}$ : INT, prénom : TEXT, nom : TEXT, naissance : TEXT, mort : TEXT, ville_naissance $\rightarrow$ Villes.id INTEGRER)
 
-Villes($\underline{id}$ : INT, nom : TEXT) 
+Villes($\underline{id}$ : INT, nom : TEXT)
 
-Bibliothèques($\underline{id}$ : INT, nom : TEXT, adresse : TEXT, code postal : INT, ville $\rightarrow$ Villes.id : INTEGRER) 
+Bibliothèques($\underline{id}$ : INT, nom : TEXT, adresse : TEXT, code postal : INT, ville $\rightarrow$ Villes.id : INTEGRER)
 
-Livres($\underline{isbn}$ : TEXT, titre : TEXT, année : INT, image : TEXT, auteur $\rightarrow$ Auteurs.id :INTEGRER) 
+Livres($\underline{isbn}$ : TEXT, titre : TEXT, année : INT, image : TEXT, auteur $\rightarrow$ Auteurs.id :INTEGRER)
 
 Inventaire($\underline{biblio} \rightarrow$ Bibliothèques.id : INTEGRER, $\underline{livre} \rightarrow$ Livres.isbn : TEXT, nb_exemplaire : INTEGRER)
 
@@ -223,8 +223,9 @@ Le mot-clef OFFSET doit toujours être précédé de LIMIT.
 
 ORDER BY utilise l’ordre lexicographique.
 
-<u>Exemple :</u> 
+<u>Exemple :</u>
 
+<!-- <img align="left" src="../Informatique-MP2I/Excalidraw/Image/Pasted_image_20240529100431.png"> -->
 SELECT $b$ AS “autre nom”
 FROM $R_{1}$
 
@@ -244,8 +245,11 @@ LIMIT $2$
 OFFSET $1$
 
 ![](Excalidraw/Image/Pasted_image_20240529100431.png)
+
 ![](Excalidraw/Image/Pasted_image_20240529100443.png)
+
 ![](Excalidraw/Image/Pasted_image_20240529100504.png)
+
 ![](Excalidraw/Image/Pasted_image_20240529100521.png)
 ### 3. Opérations ensemblistes
 
@@ -256,6 +260,7 @@ Le résultat des requêtes reliées par un opérateur ensembliste doivent avoir 
 <u>Produit cartésien :</u> FROM Relation1, Relation2, ...
 
 <u>Exemple :</u>
+
 ![](Excalidraw/Image/Pasted_image_20240529100534.png)
 ![](Excalidraw/Image/Pasted_image_20240529100547.png)
 ![](Excalidraw/Image/Pasted_image_20240529100555.png)
@@ -287,9 +292,11 @@ On peut enchaîner plusieurs jointures si on veut relier plusieurs tables.
 Si deux relations à relier ne sont pas liées par une clé étrangère, on peut éventuellement passer par des relations intermédiaires.
 
 <u>Jointure interne :</u>
+
 ![](Excalidraw/Image/Pasted_image_20240529100630.png)
 
 <u>Jointure externe :</u>
+
 ![](Excalidraw/Image/Pasted_image_20240529100639.png)
 
 <u>Autojointures :</u>
@@ -305,10 +312,15 @@ JOIN $R_{1}$ AS Y ON $X.c = Y.c$
 On obtient une ligne dans le résultat.
 
 ![](Excalidraw/Image/Pasted_image_20240529100652.png)
+
 ![](Excalidraw/Image/Pasted_image_20240529100711.png)
+
 ![](Excalidraw/Image/Pasted_image_20240529100720.png)
+
 ![](Excalidraw/Image/Pasted_image_20240529100731.png)
+
 ![](Excalidraw/Image/Pasted_image_20240529100748.png)
+
 
 COUNT$(*):$ toutes les lignes.
 

@@ -201,6 +201,8 @@ Dans un graphe $G = (S,A)$, un chemin de longueur n est une suite $S_{0},S_{1}, 
 Un chemin de longueur n possède n arêtes/arcs et n+1 sommets. On accepte les chemins de longueur 0.
 
 ![[Excalidraw/Image/Drawing 2024-04-10 10.18.08.excalidraw]]
+![](../Informatique-MP2I/Excalidraw/Image/Pasted_image_20240404080725.png)
+
 
 <u>Chemins :</u>
 
@@ -252,7 +254,7 @@ Un graphe est dit cyclique s’il comporte au minimum un cycle et est dit acycli
 
 Le sommet $y$ est dit accessible depuis le sommet $x$ s’il existe un chemin allant de $x$ à $y$.
 
-![[Excalidraw/Drawing 2024-04-10 10.39.48.excalidraw]]
+![](../Informatique-MP2I/Excalidraw/Image/Pasted_image_20240404080530.png)
 
 Le sommet $5$ est accessible depuis $1,2,3,4,5$. Le sommet $1$ n’est pas accessible depuis $3$.
 
