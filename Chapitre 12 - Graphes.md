@@ -3,21 +3,21 @@
 
 Les bases de la théorie des graphes remontent au $XVIII^{ème}$ siècle, où Euler a résolu le problème des $7$ ponts de Königsberg en le ramenant à la recherche d'un chemin passant une unique fois par chaque arc d'un graphe (appelé ultérieurement chemin _eulérien_) :
 
-![[Excalidraw/Image/Pasted image 20240404080117.png]]
+![xavier](Excalidraw/Image/Pasted_image_20240404080117.png)
 
 <u>Question :</u> Peut-on trouver un chemin dans le graphe qui passe une et une seule fois par chaque arête ?
 
 Aujourd'hui, les graphes ont de très nombreuses applications :
 
-- Réseaux sociaux 
+- Réseaux sociaux
 
-- GPS 
+- GPS
 
-- Internet 
+- Internet
 
 - Graphes de flot de contrôle
 
-- réseaux 
+- réseaux
 
 ## I. Définition des graphes orientés et non orientés
 
@@ -26,13 +26,13 @@ Aujourd'hui, les graphes ont de très nombreuses applications :
 
 <u>Définition :</u>
 
-Un graphe non orienté $G$ est un couple $(S,A)$ avec $S$ un ensemble non vide dont les éléments sont appelés des sommets. A un ensemble de paires non ordonnés $\{x, y\}$ avec $x \ne y$ où $(x,y) \in S$ dont les éléments sont appelés des arêtes. 
+Un graphe non orienté $G$ est un couple $(S,A)$ avec $S$ un ensemble non vide dont les éléments sont appelés des sommets. A un ensemble de paires non ordonnés $\{x, y\}$ avec $x \ne y$ où $(x,y) \in S$ dont les éléments sont appelés des arêtes.
 
-<u>Exemple de graphe non orienté :</u> 
+<u>Exemple de graphe non orienté :</u>
 
 ![[Excalidraw/Image/Pasted image 20240404081646.png]]
 
-$S = \{ 0,1,2,3,4,5,6\}$ et $A = \{ \{0,6\} , \{1,3\} , \{1,2\} , \{1,4\} , \{3,4\} , \{2,4\} , \{5,4\} \}$ 
+$S = \{ 0,1,2,3,4,5,6\}$ et $A = \{ \{0,6\} , \{1,3\} , \{1,2\} , \{1,4\} , \{3,4\} , \{2,4\} , \{5,4\} \}$
 
 <u>Modifications possibles de la définition :</u>
 
@@ -42,7 +42,7 @@ $S = \{ 0,1,2,3,4,5,6\}$ et $A = \{ \{0,6\} , \{1,3\} , \{1,2\} , \{1,4\} , \{3,
 
 On parle à ce moment là de multigraphes. Souvent, on ne considère que les graphes finis $(S$ est fini$)$.
 
-<u>Vocabulaire :</u> 
+<u>Vocabulaire :</u>
 
 - Deux sommets reliés par une arête sont adjacents
 
@@ -52,13 +52,13 @@ On parle à ce moment là de multigraphes. Souvent, on ne considère que les gra
 
 <u>Notation :</u>
 
-Arête $\{x,y\} \iff \{y,x\} \iff xy \iff yx$ 
+Arête $\{x,y\} \iff \{y,x\} \iff xy \iff yx$
 
 <u>Propriété :</u> nombre maximal d'arêtes d'un graphe non orienté.
 
 $|A| \le \frac{|S|(|S| - 1)}{2}$
 
-<u>Preuve :</u>  
+<u>Preuve :</u>
 
 $\binom{|S|}{2} = \frac{|S|(|S| - 1)}{2}$
 
@@ -70,11 +70,11 @@ $\binom{|S|}{2} = \frac{|S|(|S| - 1)}{2}$
 
 - On retire le dernier sommet aux $0$ autres $\displaystyle \sum_{i=0}^{|S| - 1}i$
 
-<u>Exemples concrets de graphes non orientés :</u> 
+<u>Exemples concrets de graphes non orientés :</u>
 
-- Graphe de Facebook : 
+- Graphe de Facebook :
 
-Sommets $S$ = utilisateurs 
+Sommets $S$ = utilisateurs
 
 Arête $A$ = $2$ utilisateurs “amis”
 
@@ -86,30 +86,30 @@ $|A| \simeq 10^{11}$ arêtes
 
 Utile pour les problèmes d’ordonnances.
 
-$|A|$ = nombre d’arêtes 
+$|A|$ = nombre d’arêtes
 
 $|S|$ = nombre de sommets
 
 ### 2. Graphes orientés
 
 
-<u>Définition :</u> 
+<u>Définition :</u>
 
 Un graphe orienté $G$ est un couple $(S,A)$ avec $S$ l’ensemble non vide de sommets et $A$ un ensemble de couples $(x,y)$  ordonnés $($avec $x \ne y)$ avec $x$ et $y$ éléments de $S$ dont les éléments sont des arcs.
 
-<u>Exemple de graphe orienté :</u> 
+<u>Exemple de graphe orienté :</u>
 
 ![[Excalidraw/Image/Pasted image 20240404081721.png]]
 
-$S = \{ 0,1,2,3,4,5,6\}$ et $A = \{ \{1,3\} , \{3,4\} , \{4,1\} , \{4,2\} , \{2,4\} , \{1,2\} , \{5,2\} \{0,6\} \{6,0\}\}$ 
+$S = \{ 0,1,2,3,4,5,6\}$ et $A = \{ \{1,3\} , \{3,4\} , \{4,1\} , \{4,2\} , \{2,4\} , \{1,2\} , \{5,2\} \{0,6\} \{6,0\}\}$
 
-On peut éventuellement modifier cette définition pour autoriser les boucles et les multi-arcs. 
+On peut éventuellement modifier cette définition pour autoriser les boucles et les multi-arcs.
 
 <u>Notation :</u>
 
 $(x,y)$ un arc $\iff x \rightarrow y$
 
-<u>Vocabulaire :</u> 
+<u>Vocabulaire :</u>
 
 Si on a un arc $x \rightarrow y$ :
 
@@ -121,7 +121,7 @@ Si on a un arc $x \rightarrow y$ :
 
 $|A| \le |S| \times (|S| - 1)$
 
-<u>Exemples concrets de graphes orientés :</u> 
+<u>Exemples concrets de graphes orientés :</u>
 
 - <u>Graphe d’Instagram :</u>
 
@@ -131,7 +131,7 @@ arc $x \rightarrow y$ = x est abonné à y
 
 - <u>Graphes de flot de contrôle :</u>
 
-Arc $x \rightarrow y$ = si le bloc d’instructions $y$ peut s’exécuter juste après $x$. 
+Arc $x \rightarrow y$ = si le bloc d’instructions $y$ peut s’exécuter juste après $x$.
 
 ## II. Vocabulaire de la théorie des graphes
 
@@ -139,7 +139,7 @@ Arc $x \rightarrow y$ = si le bloc d’instructions $y$ peut s’exécuter juste
 
 - <u>Dans un graphe non orienté :</u>
 
-<u>Définition :</u> 
+<u>Définition :</u>
 
 Dans un graphe non orienté, le degré d’un sommet $x$ noté $d(x)$ est le nombre d’arêtes incidentes à $x$ (= le nombre de voisins de $x$).
 
@@ -157,7 +157,7 @@ $\sum_{x \in d(x)}d(x) = 2|A|$
 
 Pour un sommet $x$ d’un graphe :
 
-- Le degré sortant de $x$, noté $d_{+}x$ est est le nombre de successeurs de $x$. 
+- Le degré sortant de $x$, noté $d_{+}x$ est est le nombre de successeurs de $x$.
 
 - Le degré entrant de $x$, noté $d_{-}x$ est est le nombre de prédécesseurs de $x$
 
@@ -174,14 +174,14 @@ Un sous-graphe d’un graphe $G = (S,A)$ est un graphe $G’ = (S’,A’)$ avec
 
 Un sous-graphe induit est un graphe $G’ = (S’,A’)$, avec $S’ \subset S$ et $A’$ est exactement l’ensemble des arêtes/arcs qui relient deux sommets de $S’$ dans $G$.
 
-<u>Exemple :</u> 
+<u>Exemple :</u>
 
 <u>Gauche :</u> un sous graphe (sommets noirs et arêtes pleines) ; <u>Droite :</u> un sous-graphe induit
 ![[Excalidraw/Image/Pasted image 20240404080327.png]]
 
-<u>Propriété :</u> 
+<u>Propriété :</u>
 
-Il y a $2^{|S|} - 1$ sous-graphes induits d’un graphe $G = (S,A)$ 
+Il y a $2^{|S|} - 1$ sous-graphes induits d’un graphe $G = (S,A)$
 
 ### 3. Graphes isomorphes
 
@@ -189,7 +189,7 @@ Il y a $2^{|S|} - 1$ sous-graphes induits d’un graphe $G = (S,A)$
 
 Un isomorphisme entre $2$ graphes $G = (S,A)$ et $G’ = (S’,A’)$ est une bijection $\varphi : S \rightarrow S'$   telle que :
 $$\begin{equation} {\forall(x,y) \in S}= \begin{cases} x,y \in A \iff \varphi(x) \times \varphi(y) \in A’ \\ x \rightarrow y \in A \iff \varphi(x) \rightarrow \varphi(y) \in A’ \end{cases} \end{equation}$$
-<u>Exemple :</u> 
+<u>Exemple :</u>
 ![[Excalidraw/Image/Pasted image 20240404080347.png]]
 
 ### 4. Chemins dans un graphe
@@ -198,7 +198,7 @@ $$\begin{equation} {\forall(x,y) \in S}= \begin{cases} x,y \in A \iff \varphi(x)
 <u>Définition :</u>
 
 Dans un graphe $G = (S,A)$, un chemin de longueur n est une suite $S_{0},S_{1}, … , S_n$ de sommets tels que$$\begin{equation} {\forall i \in [|0,n-1|]}= \begin{cases} (S_{i},S_{i+1}) \in A \\ \{S_{i},S_{i+1}\} \in A \end{cases} \end{equation}$$
-Un chemin de longueur n possède n arêtes/arcs et n+1 sommets. On accepte les chemins de longueur 0. 
+Un chemin de longueur n possède n arêtes/arcs et n+1 sommets. On accepte les chemins de longueur 0.
 
 ![[Excalidraw/Image/Drawing 2024-04-10 10.18.08.excalidraw]]
 
@@ -256,9 +256,9 @@ Le sommet $y$ est dit accessible depuis le sommet $x$ s’il existe un chemin al
 
 Le sommet $5$ est accessible depuis $1,2,3,4,5$. Le sommet $1$ n’est pas accessible depuis $3$.
 
-<u>Propriété :</u> 
+<u>Propriété :</u>
 
-La relation d’accessibilité dans un graphe non orienté est une relation d’équivalence. 
+La relation d’accessibilité dans un graphe non orienté est une relation d’équivalence.
 
 <u>Preuve  :</u>
 
@@ -273,7 +273,7 @@ Dans les graphes orientés, la symétrie n’est plus vérifiée donc ce n’est
 <u>Les propriétés suivantes sont équivalentes :</u>
 
 - il existe un chemin allant du sommet $x$ au sommet $y$.
-   
+
 - il existe un chemin simple allant du sommet $x$ au sommet $y$.
 
 - il existe un chemin élémentaire allant du sommet $x$ au sommet $y$.
@@ -301,7 +301,7 @@ Un graphe non orienté $G = (S,A)$ est dit connexe s’il existe un chemin de $x
 
 ![[Excalidraw/Drawing 2024-04-10 11.02.14.excalidraw]]
 
-Le graphe de gauche est connexe, le graphe de droite ne l’est pas. 
+Le graphe de gauche est connexe, le graphe de droite ne l’est pas.
 
 <u>Définition :</u>
 
@@ -317,7 +317,7 @@ Les composantes connexes d’un graphe non orienté sont les sous-graphes induit
 
 - Un graphe connexe possède 1 composante connexe.
 
-<u>Propriété :</u> 
+<u>Propriété :</u>
 
 $G = (S,A)$. Soient $x$ et $y$ tels que $\{x,y\} \notin A$. On ajoute une arête $xy$ dans $G$.
 
@@ -339,9 +339,9 @@ Un graphe orienté est dit faiblement connexe quand l’oubli de l’orientation
 
 <u>Propriété :</u>
 
-La relation R définie sur les graphes orientés par 
+La relation R définie sur les graphes orientés par
 
-$xRy \iff x$ accessible depuis $y$ et $y$ accessible depuis $x$ 
+$xRy \iff x$ accessible depuis $y$ et $y$ accessible depuis $x$
 
 est une relation d’équivalence.
 
@@ -349,7 +349,7 @@ est une relation d’équivalence.
 
 Les composantes fortement connexes d’un graphe orienté sont les sous-graphes induits par les classes d’équivalences de cette relation $R$.
 
-<u>Exemples :</u> 
+<u>Exemples :</u>
 
 (un graphe fortement connexe et un non fortement connexe (sommet noir non accessible depuis le sommet gris))
 ![[Excalidraw/Image/Pasted image 20240404080530.png]]
@@ -378,21 +378,21 @@ Un graphe $G$ est dit k-colorable s’il existe une k-coloration. Le nombre chro
 
 ### 1. Graphes non orientés ayant une forme particulière
 
-- <u>Graphe entièrement déconnecté :</u> 
+- <u>Graphe entièrement déconnecté :</u>
 
 Graphe composé entièrement de sommets et d’aucune arête. Il possède $|S|$ composantes connexes.
 
-- <u>Graphe complet :</u> 
+- <u>Graphe complet :</u>
 
 Possède une arête entre chaque couple de sommets possible. On le note $K_n$ avec $n$ le nombre de sommets. Il possède donc $\displaystyle \frac{n(n-1)} 2$ arêtes, il est connexe.
 
-- <u>Graphe chemin :</u> 
+- <u>Graphe chemin :</u>
 
 Ne possède que un “chemin”. On note $P_n$ le graphe chemin à $n$ sommets. $\{i,j\} \in A \iff i = j + 1$.
 
 ![[Excalidraw/Drawing 2024-04-11 08.16.05.excalidraw]]
 
-- <u>Graphe cycle :</u> 
+- <u>Graphe cycle :</u>
 
 On note $C_n$ le graphe cycle à n sommets numérotés dans $[\![0,n-1]\!]$. $\{i,j\} \in A \iff i = j + 1$ (modulo n)
   ![[Excalidraw/Drawing 2024-04-11 08.19.19.excalidraw]]
@@ -413,7 +413,7 @@ Un graphe $G = (S,A)$ est dit biparti s’il existe une partition de S en deux e
 
 Un graphe est biparti si et seulement si il est 2-colorable.
 
-- <u>Graphes bipartis complets :</u> 
+- <u>Graphes bipartis complets :</u>
 
 $K_{n,p}$ est le graphe biparti à $n+p$ sommets avec $n$ le nombre de sommets de $S_1$ et $p$ le nombre de sommets de $S_2$. Chacun des $n$ sommets de $S_1$ est relié par une arête à chacun des $p$ sommets de $S_2$.
 
@@ -427,19 +427,19 @@ On peut représenter le graphe dans le plan sans qu’aucune arête ne se croise
 
 - <u>Graphes eulériens :</u>
 
-Un chemin eulérien de $G$ est un chemin simple qui contient toutes les arêtes de $G$. 
+Un chemin eulérien de $G$ est un chemin simple qui contient toutes les arêtes de $G$.
 
 Un cycle (circuit pour un graphe orienté) eulérien est un chemin eulérien dont les extrémités sont identiques.
 
-Un graphe est eulérien s’il possède au moins un cycle eulérien. 
+Un graphe est eulérien s’il possède au moins un cycle eulérien.
 
 - <u>Graphes hamiltoniens :</u>
 
-Un chemin hamiltoniens de $G$ est un chemin élémentaire qui contient tous les sommets de $G$. 
+Un chemin hamiltoniens de $G$ est un chemin élémentaire qui contient tous les sommets de $G$.
 
 Un cycle (circuit pour un graphe orienté) hamiltonien est un chemin hamiltonien élémentaire sauf aux extrémités.
 
-Un graphe est hamiltonien s’il possède au moins un cycle hamiltonien. 
+Un graphe est hamiltonien s’il possède au moins un cycle hamiltonien.
 
 ### 3. Arbres dans la théorie des graphes
 
@@ -447,7 +447,7 @@ Un graphe est hamiltonien s’il possède au moins un cycle hamiltonien.
 
 Dans la théorie des graphes, un arbre est défini comme étant un graphe connexe et acyclique (non positionnel).
 
-<u>Propriété :</u> 
+<u>Propriété :</u>
 
 Un graphe non orienté acyclique à $n$ sommets possède au plus $n-1$ arêtes.
 
@@ -457,9 +457,9 @@ Tout graphe non orienté acyclique possède un sommet qui a un degré inférieur
 
 <u>Preuve du lemme :</u>
 
-On raisonne par l’absurde. Supposons que tous les sommets d’un graphe non orienté acyclique sont de degré au moins $2$. Construisons un chemin depuis n’importe quel sommet du graphe, en se déplaçant à chaque fois vers un sommet différent de celui dont on venait (possible car de degré supérieur ou égal à $2$). 
+On raisonne par l’absurde. Supposons que tous les sommets d’un graphe non orienté acyclique sont de degré au moins $2$. Construisons un chemin depuis n’importe quel sommet du graphe, en se déplaçant à chaque fois vers un sommet différent de celui dont on venait (possible car de degré supérieur ou égal à $2$).
 
-Comme le nombre de sommets est fini, on finit forcément par tomber sur un sommet déjà dans le chemin. Donc il y a un cycle, absurde. 
+Comme le nombre de sommets est fini, on finit forcément par tomber sur un sommet déjà dans le chemin. Donc il y a un cycle, absurde.
 
 <u>Preuve de la propriété :</u>
 
@@ -467,7 +467,7 @@ Par récurrence, montrons $H_n$ : “Un graphe non orienté acyclique à $n$ som
 
 <u>Initialisation :</u> Un graphe à $1$ sommet possède $0$ arête.
 
-<u>Hérédité :</u> Supposons $H_n$. 
+<u>Hérédité :</u> Supposons $H_n$.
 
 D’après le lemme, un graphe non orienté acyclique à $n+1$ sommets possède un sommet de degré inférieur ou égal à $1$.
 
@@ -483,7 +483,7 @@ Un graphe non orienté connexe à $n$ sommets possède au moins $n-1$ arêtes.
 
 <u>Initialisation :</u> Un graphe connexe à $1$ sommet possède $0$ arête.
 
-<u>Hérédité :</u> Soit $G = (S,A)$ un graphe connexe à $n \ge 2$ sommets. Tout sommet est de degré non nul. 
+<u>Hérédité :</u> Soit $G = (S,A)$ un graphe connexe à $n \ge 2$ sommets. Tout sommet est de degré non nul.
 
 - Si $G$ a un sommet de degré $1$, noté $x$.  Le sous-graphe induit par $S \backslash \{x\}$ est connexe à $n-1$ sommets. Donc par hypothèse de récurrence, il a au moins $n-2$ arêtes donc $G$ a au moins $n-2 + d(x) = n-1$ arêtes.
 
@@ -509,7 +509,7 @@ Les propriétés suivantes sont équivalentes :
 
 <u>Définition :</u>
 
-Un graphe acyclique est une forêt. Les composantes connexes d’une forêt sont les arbres. 
+Un graphe acyclique est une forêt. Les composantes connexes d’une forêt sont les arbres.
 
 <u>Définition :</u>
 
@@ -517,7 +517,7 @@ Les arbres enracinés sont les arbres pour lesquels on a distingué un sommet pa
 
 <u>Définition :</u>
 
-Un arbre couvrant d’un graphe $G = (S,A)$ est un arbre dont l’ensemble des sommets est $S$. 
+Un arbre couvrant d’un graphe $G = (S,A)$ est un arbre dont l’ensemble des sommets est $S$.
 
 ![[Excalidraw/Drawing 2024-04-11 09.50.24.excalidraw]]
 
@@ -535,7 +535,7 @@ Considérons l’algorithme suivant :
 ``` Pseudo-code
 G' = (S,A'=A)
 Tant que G' n'est pas minimalement connexe :
-	Choisir une arête de xy appartenant à A' telle que le graphe (S,A'\xy) 
+	Choisir une arête de xy appartenant à A' telle que le graphe (S,A'\xy)
 	est connexe
 	A' <- A'\xy
 Renvoyer G'
@@ -543,7 +543,7 @@ Renvoyer G'
 
 <u>Correction de l’algorithme :</u>
 
-<u>Invariant :</u> $G’$ est connexe 
+<u>Invariant :</u> $G’$ est connexe
 
 - Avant la boucle, vrai car $G$ est connexe par précondition.
 
@@ -569,7 +569,7 @@ L’existence et la correction de cet algorithme montre la propriété.
 
 <u>Définition :</u>
 
-Un graphe non orienté/orienté pondéré est un triplet $(S,A,\omega)$ avec $S$ l’ensemble des sommets, $A$ l’ensemble des arêtes/arcs et $\omega$ est une application de $A$ dans $\mathbb{R}$ qui à une arête/arc associe son poids $\omega$ est appelée fonction de pondération. Généralement, on étend $\omega$ en définissant 
+Un graphe non orienté/orienté pondéré est un triplet $(S,A,\omega)$ avec $S$ l’ensemble des sommets, $A$ l’ensemble des arêtes/arcs et $\omega$ est une application de $A$ dans $\mathbb{R}$ qui à une arête/arc associe son poids $\omega$ est appelée fonction de pondération. Généralement, on étend $\omega$ en définissant
 
 $$\begin{equation} \begin{cases} \omega(xy) \\ \omega(x \rightarrow y)\end{cases}  = + \infty \end{equation}$$
  si $$\begin{equation} \begin{cases} xy \\ x \rightarrow y\end{cases}  \notin A \end{equation}$$
@@ -580,7 +580,7 @@ $$\begin{equation} \begin{cases} \omega(xy) \\ \omega(x \rightarrow y)\end{cases
 
 - Graphes routiers
 
-- Internet 
+- Internet
 
 <u>Définition :</u>
 
@@ -624,13 +624,13 @@ Plus adaptée pour les graphes denses.
 
 <u>Avantage :</u> même complexité
 
-<u>Inconvénient :</u> pas terrible 
+<u>Inconvénient :</u> pas terrible
 
 <u>Implémentation :</u>
 
 - <u>OCaml :</u>
 
-```OCaml 
+```OCaml
 type matrice_adjacente = int array array
 ```
 
@@ -653,7 +653,7 @@ struct graphe_s {
 
 <u>Définition :</u>
 
-Cette représentation consiste à stocker, pour chaque sommets du graphe, la liste de ses voisins/successeurs. 
+Cette représentation consiste à stocker, pour chaque sommets du graphe, la liste de ses voisins/successeurs.
 
 ![[Excalidraw/Drawing 2024-04-17 11.33.37.excalidraw]]
 
@@ -719,7 +719,7 @@ Pour ne pas tourner en rond, on stocke les sommets déjà vus.
 
 Cette structure doit permettre un test d’appartenance efficace :
 
-- Tableau associatif 
+- Tableau associatif
 
 - Tableau de taille $|S|$ que l’on rempli de true/false.
 
@@ -754,10 +754,10 @@ explorer(dep)
 
 - Création de vus : $\mathcal{O}(|S|)$
 
-- Fonction explorer : 
+- Fonction explorer :
 	→ Chaque sommet est vu au plus 1 fois.
 	→  Test d’appartenance à vus est en $\mathcal{O}(1)$.
-	→  Pour un sommet $s$ fixé, le nombre d’itérations de la boucle (= nombre d’appels récursifs lancés) est en $\mathcal{O}(d(s))$ en supposant avoir utilisé la liste d’adjacence de $G$. 
+	→  Pour un sommet $s$ fixé, le nombre d’itérations de la boucle (= nombre d’appels récursifs lancés) est en $\mathcal{O}(d(s))$ en supposant avoir utilisé la liste d’adjacence de $G$.
 	→ L’ajout de $s$ à vus est en $\mathcal{O}(1)$
 
 <u>Total :</u>
@@ -812,13 +812,13 @@ $D(x,y’) \le D(x,y) + 1$
 
 <u>Propriété du parcours en largeur depuis sommet dep :</u>
 
-Si $D(dep,x) < D(dep,y) < \infty$ 
+Si $D(dep,x) < D(dep,y) < \infty$
 
 alors $x$ sera traité avant $y$.
 
-<u>Preuve :</u> 
+<u>Preuve :</u>
 
-Il faut montrer l’invariant suivant : 
+Il faut montrer l’invariant suivant :
 
 Un sommet est dit :
 
@@ -861,7 +861,7 @@ PARCOURS (G, depart) :
 ```
 
 Si `a_traiter` est une pile, le parcours est en profondeur.
-Une file, le parcours est en largeur. 
+Une file, le parcours est en largeur.
 D'une stratégie aléatoire, le parcours est quelconque.
 
 ### 4. Applications des parcours
@@ -875,7 +875,7 @@ D'une stratégie aléatoire, le parcours est quelconque.
 <u>Trouver les composantes connexes :</u>
 
 → les sommets dans vus à l’issue d’un parcours sont dans la même composante.
-	
+
 → on recommence le parcours avec d’autres sommets tant que nécessaire.
 
 
