@@ -109,7 +109,7 @@ Les variables propositionnelles et $\top$ et $\bot$ sont représentés par des f
 ![[Excalidraw/Drawing 2024-05-14 09.00.21.excalidraw]]
 
 <u>Exemple :</u> $x,y,z \in \mathcal V$ 
-formule : $((x \land \lnot y) \lor \lnot(y \lor z))$
+<u>formule :</u> $((x \land \lnot y) \lor \lnot(y \lor z))$
 
 Pour retrouver la formule propositionnelle depuis sa représentation arborescente, on effectue un parcours infixe($\varphi$ à droite des noeuds $\lnot$)
 
