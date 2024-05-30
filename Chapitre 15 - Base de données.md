@@ -51,7 +51,7 @@ Un type d’entité regroupe toutes les entités ayant le même type de proprié
 
 <u>Représentation graphique d’un type d’entité :</u>
 
-![[Drawing 2024-05-29 10.43.53.excalidraw]]
+![[Excalidraw/Drawing 2024-05-29 10.43.53.excalidraw]]
 
 <u>Définition :</u>
 
@@ -61,11 +61,11 @@ Un type d’association regroupe les associations qui ont des propriétés de ty
 
 <u>Exemple :</u> 
 
-![[Drawing 2024-05-29 10.51.04.excalidraw]]
+![[Excalidraw/Drawing 2024-05-29 10.51.04.excalidraw]]
 
 On se limitera aux associations binaires (2 entités).
 
-![[Drawing 2024-05-29 10.55.12.excalidraw]]
+![[Excalidraw/Drawing 2024-05-29 10.55.12.excalidraw]]
 
 <u>Cardinalité :</u>
 
@@ -75,7 +75,7 @@ La cardinalité d’une association reliant 2 entités de contraintes respective
 
 <u>Exemple :</u>
 
-![[Drawing 2024-05-29 11.06.09.excalidraw]]
+![[Excalidraw/Drawing 2024-05-29 11.06.09.excalidraw]]
 
 <u>Cardinalités usuelles :</u>
 
@@ -87,13 +87,13 @@ La cardinalité d’une association reliant 2 entités de contraintes respective
 
 <u>Exemple :</u>
 
-![[Drawing 2024-05-29 11.13.02.excalidraw]]
+![[Excalidraw/Drawing 2024-05-29 11.13.02.excalidraw]]
 
 Si on a dans le modèle entité-association des associations de cardinalités $*-*$, on doit avant de concevoir la base les transformer en deux associations de cardinalité $1-*$.
 
 <u>Exemple :</u>
 
-![[Drawing 2024-05-29 11.17.50.excalidraw]]
+![[Excalidraw/Drawing 2024-05-29 11.17.50.excalidraw]]
 
 ### 3. Modèle relationnel
 
@@ -169,7 +169,7 @@ association $1-* \rightarrow$ clé étrangère (dans “$1$ faisant référence 
 
 Passage du modèle entité-association au modèle relationnel.
 
-![[Drawing 2024-05-30 08.04.14.excalidraw]]
+![[Excalidraw/Drawing 2024-05-30 08.04.14.excalidraw]]
 
 <u>Schéma relationnel complet :</u>
 
@@ -212,8 +212,8 @@ Les opérateurs sont : ($+, -, *,/,$%,ABS, LOWER,UPPER,LENGTH$,$||).
 
 Les enregistrements dans le résultat d'une projection sont dans un ordre arbitraire.
 
-![[Pasted image 20240529100356.png]]
-![[Pasted image 20240529100419.png]]
+![[Excalidraw/Image/Pasted image 20240529100356.png]]
+![[Excalidraw/Image/Pasted image 20240529100419.png]]
 
 ### 2. Formater une projection
 
@@ -243,10 +243,10 @@ ORDER BY $b$ DESC
 LIMIT $2$
 OFFSET $1$
 
-![[Pasted image 20240529100431.png]]
-![[Pasted image 20240529100443.png]]
-![[Pasted image 20240529100504.png]]
-![[Pasted image 20240529100521.png]]
+![[Excalidraw/Image/Pasted image 20240529100431.png]]
+![[Excalidraw/Image/Pasted image 20240529100443.png]]
+![[Excalidraw/Image/Pasted image 20240529100504.png]]
+![[Excalidraw/Image/Pasted image 20240529100521.png]]
 ### 3. Opérations ensemblistes
 
 <u>Mots-clef :</u> UNION, INTERSECT, EXCEPT.
@@ -256,10 +256,10 @@ Le résultat des requêtes reliées par un opérateur ensembliste doivent avoir 
 <u>Produit cartésien :</u> FROM Relation1, Relation2, ...
 
 <u>Exemple :</u>
-![[Pasted image 20240529100534.png]]
-![[Pasted image 20240529100547.png]]
-![[Pasted image 20240529100555.png]]
-![[Pasted image 20240529100602.png]]
+![[Excalidraw/Image/Pasted image 20240529100534.png]]
+![[Excalidraw/Image/Pasted image 20240529100547.png]]
+![[Excalidraw/Image/Pasted image 20240529100555.png]]
+![[Excalidraw/Image/Pasted image 20240529100602.png]]
 
 Le nombre d’enregistrements du résultat est égal au nombre d’enregistrements de $R_ {1} \times$ le nombre d’enregistrements de R$_{2}$.
 
@@ -272,7 +272,7 @@ C’est généralisable à autant de relation que nécessaire.
 <u>Opérateurs booléens :</u> $=, <>, ≤,<,≥,>$.
 
 <u>Exemple :</u>
-![[Pasted image 20240529100613.png]]
+![[Excalidraw/Image/Pasted image 20240529100613.png]]
 
 ### 5. Jointures
 
@@ -287,10 +287,10 @@ On peut enchaîner plusieurs jointures si on veut relier plusieurs tables.
 Si deux relations à relier ne sont pas liées par une clé étrangère, on peut éventuellement passer par des relations intermédiaires.
 
 <u>Jointure interne :</u>
-![[Pasted image 20240529100630.png]]
+![[Excalidraw/Image/Pasted image 20240529100630.png]]
 
 <u>Jointure externe :</u>
-![[Pasted image 20240529100639.png]]
+![[Excalidraw/Image/Pasted image 20240529100639.png]]
 
 <u>Autojointures :</u>
 
@@ -304,11 +304,11 @@ JOIN $R_{1}$ AS Y ON $X.c = Y.c$
 
 On obtient une ligne dans le résultat.
 
-![[Pasted image 20240529100652.png]]
-![[Pasted image 20240529100711.png]]
-![[Pasted image 20240529100720.png]]
-![[Pasted image 20240529100731.png]]
-![[Pasted image 20240529100748.png]]
+![[Excalidraw/Image/Pasted image 20240529100652.png]]
+![[Excalidraw/Image/Pasted image 20240529100711.png]]
+![[Excalidraw/Image/Pasted image 20240529100720.png]]
+![[Excalidraw/Image/Pasted image 20240529100731.png]]
+![[Excalidraw/Image/Pasted image 20240529100748.png]]
 
 COUNT$(*):$ toutes les lignes.
 
@@ -326,17 +326,17 @@ Les fonctions d’agrégation s’appliquent sur chaque groupe.
 
 Avec having count$(*)$ <> 2. La première ligne n’apparaît plus.
 
-![[Pasted image 20240529100811.png]]
-![[Pasted image 20240529100824.png]]
-![[Pasted image 20240529100830.png]]
+![[Excalidraw/Image/Pasted image 20240529100811.png]]
+![[Excalidraw/Image/Pasted image 20240529100824.png]]
+![[Excalidraw/Image/Pasted image 20240529100830.png]]
 
 ### 8. Requêtes imbriquées
 
 
-![[Pasted image 20240529100841.png]]
-![[Pasted image 20240529100850.png]]
+![[Excalidraw/Image/Pasted image 20240529100841.png]]
+![[Excalidraw/Image/Pasted image 20240529100850.png]]
 
 ### Conclusion
 
 
-![[Pasted image 20240529100858.png]]
+![[Excalidraw/Image/Pasted image 20240529100858.png]]

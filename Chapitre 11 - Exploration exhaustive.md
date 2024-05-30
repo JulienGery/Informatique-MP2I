@@ -97,7 +97,7 @@ Construction d'une solution potentielle petit à petit, en revenant en arrière 
 
 On peut représenter n’importe quel algorithme de backtracking par un arbre :
 
-![[Image 1.png]]
+![[Excalidraw/Image/Image 1.png]]
 
 La racine représente le problème d’origine et chaque nœud interne de l’arbre correspond à la construction en cours d’une solution partielle tandis que les feuilles sont les solutions potentielles.
 
@@ -105,7 +105,7 @@ La racine représente le problème d’origine et chaque nœud interne de l’ar
 
 <u>Objectif :</u> remplir le plateau avec les 256 pièces du puzzle tel que 2 pièces adjacentes ont le même bord en commun. 
 
-![[excalidraw]]
+![[Excalidraw/Image/excalidraw]]
 
 <u>Algorithme de backtracking :</u>
 
@@ -145,7 +145,7 @@ A chaque nœud interne, on s’assure que la construction partielle a des chance
 
 <u>Arbre du backtracking :</u>
 
-![[Image 2.png]]
+![[Excalidraw/Image/Image 2.png]]
     
 <u>Elagage de l’arbre :</u>
 

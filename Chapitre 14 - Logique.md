@@ -106,14 +106,14 @@ Toute formule propositionnelle admet une représentation arborescente.
 
 Les variables propositionnelles et $\top$ et $\bot$ sont représentés par des feuilles.
 
-![[Drawing 2024-05-14 09.00.21.excalidraw]]
+![[Excalidraw/Drawing 2024-05-14 09.00.21.excalidraw]]
 
 <u>Exemple :</u> $x,y,z \in \mathcal V$ 
 formule : $((x \land \lnot y) \lor \lnot(y \lor z))$
 
 Pour retrouver la formule propositionnelle depuis sa représentation arborescente, on effectue un parcours infixe($\varphi$ à droite des noeuds $\lnot$)
 
-![[Drawing 2024-05-14 09.09.40.excalidraw]]
+![[Excalidraw/Drawing 2024-05-14 09.09.40.excalidraw]]
 
 <u>Remarque :</u> 
 
@@ -243,7 +243,7 @@ $X =$ {$A,B$}, $S_{f} =$ {$\varnothing$ d’arité $0$, $\cap$ d’arité $2$}, 
 
 <u>Représentation arborescente de la formule :</u>
 
-![[Drawing 2024-05-15 10.39.58.excalidraw]]
+![[Excalidraw/Drawing 2024-05-15 10.39.58.excalidraw]]
 
 <u>Vocabulaire :</u>
 
@@ -707,7 +707,7 @@ Dans le graphe orienté, on aura donc deux sommets $\lnot l_{1}$ et $l_{2}$ avec
 
 <u>Exemple :</u> Problème des desserts
 
-![[Drawing 2024-05-23 08.25.10.excalidraw]]
+![[Excalidraw/Drawing 2024-05-23 08.25.10.excalidraw]]
 
 <u>Théorème :</u> 
 
@@ -789,7 +789,7 @@ $\varphi \leftrightarrow \top \equiv \varphi$
 $\bot \leftrightarrow \varphi \equiv \lnot \varphi$
 $\varphi \leftrightarrow \bot \equiv \lnot \varphi$
 
-![[Pasted image 20240523093547.png]]
+![[Excalidraw/Pasted image 20240523093547.png]]
 
 <u>Proposition :</u> 
 

@@ -3,7 +3,7 @@
 
 Les bases de la théorie des graphes remontent au $XVIII^{ème}$ siècle, où Euler a résolu le problème des $7$ ponts de Königsberg en le ramenant à la recherche d'un chemin passant une unique fois par chaque arc d'un graphe (appelé ultérieurement chemin _eulérien_) :
 
-![[Pasted image 20240404080117.png]]
+![[Excalidraw/Image/Pasted image 20240404080117.png]]
 
 <u>Question :</u> Peut-on trouver un chemin dans le graphe qui passe une et une seule fois par chaque arête ?
 
@@ -30,7 +30,7 @@ Un graphe non orienté $G$ est un couple $(S,A)$ avec $S$ un ensemble non vide d
 
 <u>Exemple de graphe non orienté :</u> 
 
-![[Pasted image 20240404081646.png]]
+![[Excalidraw/Image/Pasted image 20240404081646.png]]
 
 $S = \{ 0,1,2,3,4,5,6\}$ et $A = \{ \{0,6\} , \{1,3\} , \{1,2\} , \{1,4\} , \{3,4\} , \{2,4\} , \{5,4\} \}$ 
 
@@ -82,7 +82,7 @@ $|A| \simeq 10^{11}$ arêtes
 
 - <u>Graphes d'intervalles :</u>
 
-![[Pasted image 20240404090146.png]]
+![[Excalidraw/Image/Pasted image 20240404090146.png]]
 
 Utile pour les problèmes d’ordonnances.
 
@@ -99,7 +99,7 @@ Un graphe orienté $G$ est un couple $(S,A)$ avec $S$ l’ensemble non vide de s
 
 <u>Exemple de graphe orienté :</u> 
 
-![[Pasted image 20240404081721.png]]
+![[Excalidraw/Image/Pasted image 20240404081721.png]]
 
 $S = \{ 0,1,2,3,4,5,6\}$ et $A = \{ \{1,3\} , \{3,4\} , \{4,1\} , \{4,2\} , \{2,4\} , \{1,2\} , \{5,2\} \{0,6\} \{6,0\}\}$ 
 
@@ -177,7 +177,7 @@ Un sous-graphe induit est un graphe $G’ = (S’,A’)$, avec $S’ \subset S$ 
 <u>Exemple :</u> 
 
 <u>Gauche :</u> un sous graphe (sommets noirs et arêtes pleines) ; <u>Droite :</u> un sous-graphe induit
-![[Pasted image 20240404080327.png]]
+![[Excalidraw/Image/Pasted image 20240404080327.png]]
 
 <u>Propriété :</u> 
 
@@ -190,7 +190,7 @@ Il y a $2^{|S|} - 1$ sous-graphes induits d’un graphe $G = (S,A)$
 Un isomorphisme entre $2$ graphes $G = (S,A)$ et $G’ = (S’,A’)$ est une bijection $\varphi : S \rightarrow S'$   telle que :
 $$\begin{equation} {\forall(x,y) \in S}= \begin{cases} x,y \in A \iff \varphi(x) \times \varphi(y) \in A’ \\ x \rightarrow y \in A \iff \varphi(x) \rightarrow \varphi(y) \in A’ \end{cases} \end{equation}$$
 <u>Exemple :</u> 
-![[Pasted image 20240404080347.png]]
+![[Excalidraw/Image/Pasted image 20240404080347.png]]
 
 ### 4. Chemins dans un graphe
 
@@ -200,7 +200,7 @@ $$\begin{equation} {\forall(x,y) \in S}= \begin{cases} x,y \in A \iff \varphi(x)
 Dans un graphe $G = (S,A)$, un chemin de longueur n est une suite $S_{0},S_{1}, … , S_n$ de sommets tels que$$\begin{equation} {\forall i \in [|0,n-1|]}= \begin{cases} (S_{i},S_{i+1}) \in A \\ \{S_{i},S_{i+1}\} \in A \end{cases} \end{equation}$$
 Un chemin de longueur n possède n arêtes/arcs et n+1 sommets. On accepte les chemins de longueur 0. 
 
-![[Drawing 2024-04-10 10.18.08.excalidraw]]
+![[Excalidraw/Image/Drawing 2024-04-10 10.18.08.excalidraw]]
 
 <u>Chemins :</u>
 
@@ -252,7 +252,7 @@ Un graphe est dit cyclique s’il comporte au minimum un cycle et est dit acycli
 
 Le sommet $y$ est dit accessible depuis le sommet $x$ s’il existe un chemin allant de $x$ à $y$.
 
-![[Drawing 2024-04-10 10.39.48.excalidraw]]
+![[Excalidraw/Drawing 2024-04-10 10.39.48.excalidraw]]
 
 Le sommet $5$ est accessible depuis $1,2,3,4,5$. Le sommet $1$ n’est pas accessible depuis $3$.
 
@@ -299,7 +299,7 @@ Un graphe non orienté $G = (S,A)$ est dit connexe s’il existe un chemin de $x
 
 <u>Exemple :</u>
 
-![[Drawing 2024-04-10 11.02.14.excalidraw]]
+![[Excalidraw/Drawing 2024-04-10 11.02.14.excalidraw]]
 
 Le graphe de gauche est connexe, le graphe de droite ne l’est pas. 
 
@@ -352,7 +352,7 @@ Les composantes fortement connexes d’un graphe orienté sont les sous-graphes 
 <u>Exemples :</u> 
 
 (un graphe fortement connexe et un non fortement connexe (sommet noir non accessible depuis le sommet gris))
-![[Pasted image 20240404080530.png]]
+![[Excalidraw/Image/Pasted image 20240404080530.png]]
 
 ### 7. Coloration de graphes
 
@@ -372,7 +372,7 @@ Un graphe $G$ est dit k-colorable s’il existe une k-coloration. Le nombre chro
 
 - <u>Coloration :</u> 2 intervalles incompatibles ont des couleurs différentes.
 
-![[Pasted image 20240404080645.png]]
+![[Excalidraw/Image/Pasted image 20240404080645.png]]
 
 ## III. Graphes particuliers
 
@@ -390,12 +390,12 @@ Possède une arête entre chaque couple de sommets possible. On le note $K_n$ av
 
 Ne possède que un “chemin”. On note $P_n$ le graphe chemin à $n$ sommets. $\{i,j\} \in A \iff i = j + 1$.
 
-![[Drawing 2024-04-11 08.16.05.excalidraw]]
+![[Excalidraw/Drawing 2024-04-11 08.16.05.excalidraw]]
 
 - <u>Graphe cycle :</u> 
 
 On note $C_n$ le graphe cycle à n sommets numérotés dans $[\![0,n-1]\!]$. $\{i,j\} \in A \iff i = j + 1$ (modulo n)
-  ![[Drawing 2024-04-11 08.19.19.excalidraw]]
+  ![[Excalidraw/Drawing 2024-04-11 08.19.19.excalidraw]]
 On peut donner des définitions équivalentes pour les graphes orientés.
 
 ### 2. Graphes ayant des propriétés particulières
@@ -419,7 +419,7 @@ $K_{n,p}$ est le graphe biparti à $n+p$ sommets avec $n$ le nombre de sommets d
 
 <u>Exemple :</u>
 
-![[Pasted image 20240404080725.png]]
+![[Excalidraw/Image/Pasted image 20240404080725.png]]
 
 - <u>Graphes planaires :</u>
 
@@ -519,7 +519,7 @@ Les arbres enracinés sont les arbres pour lesquels on a distingué un sommet pa
 
 Un arbre couvrant d’un graphe $G = (S,A)$ est un arbre dont l’ensemble des sommets est $S$. 
 
-![[Drawing 2024-04-11 09.50.24.excalidraw]]
+![[Excalidraw/Drawing 2024-04-11 09.50.24.excalidraw]]
 
 <u>Propriété :</u>
 
@@ -565,7 +565,7 @@ L’existence et la correction de cet algorithme montre la propriété.
 
 <u>Données sur les arcs/arêtes :</u>
 
-![[Drawing 2024-04-17 10.55.12.excalidraw]]
+![[Excalidraw/Drawing 2024-04-17 10.55.12.excalidraw]]
 
 <u>Définition :</u>
 
@@ -598,7 +598,7 @@ Soit $G = (S,A)$ un graphe. La matrice d’adjacence de $G$ est une matrice $M =
 
 <u>Exemples :</u>
 
-![[Pasted image 20240404080859.png]]
+![[Excalidraw/Image/Pasted image 20240404080859.png]]
 
 <u>Propriété :</u>
 
@@ -655,7 +655,7 @@ struct graphe_s {
 
 Cette représentation consiste à stocker, pour chaque sommets du graphe, la liste de ses voisins/successeurs. 
 
-![[Drawing 2024-04-17 11.33.37.excalidraw]]
+![[Excalidraw/Drawing 2024-04-17 11.33.37.excalidraw]]
 
 <u>Complexité spatiale :</u>
 
@@ -766,14 +766,14 @@ $\displaystyle \mathcal{O}(|S|) + \sum_{s \in S}(\mathcal{O}(d(s)) + \mathcal{O}
 
 <u>Exemple :</u>
 
-![[Drawing 2024-04-18 08.31.51.excalidraw]]
+![[Excalidraw/Drawing 2024-04-18 08.31.51.excalidraw]]
 
 Parcours en profondeur depuis $0$ : $0,1,2,3,7,8,4$
 
 Seuls les sommets accessibles depuis le départ sont traités.
 
 <u>Arborescence du parcours :</u>
-![[Drawing 2024-04-18 08.41.26.excalidraw]]
+![[Excalidraw/Drawing 2024-04-18 08.41.26.excalidraw]]
 
 ### 2. Parcours en largeur
 
@@ -798,7 +798,7 @@ Tant que f non vide :
 En reprenant le même graphe que pour le parcours précédent, le parcours en largeur donne : $0,1,2,3,4,7,8$
 
 <u>Arborescence :</u>
-![[Drawing 2024-04-18 08.53.22.excalidraw]]
+![[Excalidraw/Drawing 2024-04-18 08.53.22.excalidraw]]
 
 <u>Définition :</u>
 
@@ -840,7 +840,7 @@ L’invariant, valable à la fermeture d’un sommet $s_k$, en ayant numéroté 
 
 Si on remplace la file par une pile.
 
-![[Drawing 2024-04-18 09.15.04.excalidraw]]
+![[Excalidraw/Drawing 2024-04-18 09.15.04.excalidraw]]
 
 Il faut autoriser le fait d’avoir plusieurs fois le même sommet dans la pile pour retrouver le parcours en profondeur.
 
